@@ -1,9 +1,9 @@
 const request = require("request");
 const args = process.argv.slice(2);
 
-request(`https://api.thecatawapi.com/v1/breeds/search?q=${args[0]}`, function(error, response, body) {
+request(`https://api.thecatapi.com/v1/breeds/search?q=${args[0]}`, function(error, response, body) {
 
-  if (error !== undefined) {
+  if (error !== null) {
     console.log("There was an error");
     return;
   }
